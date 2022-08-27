@@ -24,7 +24,7 @@ void unitTest02(){
 }
 
 void unitTest03(){
-    assert(coldAdvisory(50, 0) == COLD_ADVISORY);
+    assert(coldAdvisory(49, 0) == COLD_ADVISORY);
     printf("Test 03 Passed\n");
 }
 
@@ -34,12 +34,12 @@ void unitTest04(){
 }
 
 void unitTest05(){
-    assert(coldAdvisory(20, -10) == COLD_ADVISORY);
+    assert(coldAdvisory(19, -10) == COLD_ADVISORY);
     printf("Test 05 Passed\n");
 }
 
 void unitTest06(){
-    assert(coldAdvisory(69, -9) == COLD_WARNING);
+    assert(coldAdvisory(69, -11) == COLD_WARNING);
     printf("Test 06 Passed\n");
 }
 
