@@ -42,10 +42,8 @@ void calculateColdAdvisory() {
 
 int main(void) {
 
-    // Uncomment me to run all tests
-    //runAllTests();
+    runAllTests();
 
-    // Uncomment me to run the main program
     calculateColdAdvisory();
 
     return 0;
