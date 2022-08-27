@@ -14,12 +14,41 @@
 #include "advisory.h"
 
 void unitTest01(){
-    // Assert Statements Go Here
+    assert(coldAdvisory(0, 16) == NO_COLD_ADVISORY);
+    printf("Test 01 Passed\n");
+}
 
+void unitTest02(){
+    assert(coldAdvisory(51, 0) == COLD_WARNING);
+    printf("Test 02 Passed\n");
+}
+
+void unitTest03(){
+    assert(coldAdvisory(50, 0) == COLD_ADVISORY);
+    printf("Test 03 Passed\n");
+}
+
+void unitTest04(){
+    assert(coldAdvisory(21, -10) == COLD_WARNING);
+    printf("Test 04 Passed\n");
+}
+
+void unitTest05(){
+    assert(coldAdvisory(20, -10) == COLD_ADVISORY);
+    printf("Test 05 Passed\n");
+}
+
+void unitTest06(){
+    assert(coldAdvisory(69, -9) == COLD_WARNING);
+    printf("Test 06 Passed\n");
 }
 
 void runAllTests(){
     unitTest01();
-    // Additional Unit Test Calls Go Here
+    unitTest02();
+    unitTest03();
+    unitTest04();
+    unitTest05();
+    unitTest06();
     printf("Testing completed\n");
 }
