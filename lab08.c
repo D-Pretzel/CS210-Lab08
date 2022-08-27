@@ -1,10 +1,10 @@
-/* lab08.c
- * =============================================================
- *    Name:
- * Section:
- * Purpose:
- * =============================================================
- */
+/** lab08.c
+* ===========================================================
+* Name: David Petzold
+* Section: T6/7
+* Project: Lab 08
+* Purpose: Develop a unit test for the 'coldAdvisory' method
+* ===========================================================*/
 
 #include <stdio.h>
 #include "advisory.h"

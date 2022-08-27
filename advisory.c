@@ -1,15 +1,13 @@
-
 #include "advisory.h"
 
-int path1; 
-int path2; 
-int path3; 
-int path4; 
-int path5; 
+int path1;
+int path2;
+int path3;
+int path4;
+int path5;
 int path6;
 
 /**
- * ----------------------------------------------------
  * @brief determines which cold adviory should be given
  * @param windSpeed speed of the wind in MPH
  * @param ambientTempF ambient temperature in F
@@ -28,7 +26,7 @@ int coldAdvisory(int windSpeed, int ambientTempF){
        } else {
          path3 = 1;
          return COLD_ADVISORY;
-       } 
+       }
    } else if(ambientTempF >= -10) {
        if(windSpeed > 20) {
          path4 = 1;
